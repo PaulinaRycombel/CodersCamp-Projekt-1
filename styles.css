@@ -1,128 +1,124 @@
 :root {
-    --gray: #FAFAFF;
-    --purple: #df18be;
-  }
+  --gray: #FAFAFF;
+  --purple: #df18be;
+  --blue: rgb(24, 143, 223);
+  --black: rgb(71, 71, 71);
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-    margin: 0;
-    font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  font-family: 'Quicksand', 'Pacifico', sans-serif;
 }
 
 /* ------------ HEADER ---------- */
+
 #hero {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-image: linear-gradient(to top left, rgba(24, 143, 223, 0.6), rgba(223, 24, 190, 0.6)), 
-url(./img/header_image1.jpg);
-    background-repeat: no-repeat;
-    position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(to top left, rgba(24, 143, 223, 0.6), rgba(223, 24, 190, 0.6)), url(./img/header_image1.jpg);
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .container {
-    display: flex;
-    position: absolute;
-    margin: 20px;
-    color: white;
-    justify-content: space-between;
-    align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  margin: 20px;
+  color: white;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .logo {
-    font-size: 1.2rem;
-    margin: 0 40px;
-    font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0 40px;
+  font-weight: bold;
 }
 
 .nav-item {
-    margin-right: 40px;
-    font-size: 1.2rem;
+  margin-right: 40px;
+  font-size: 1.2rem;
+}
+
+.nav-item a {
+  outline: none;
+  text-decoration: nonoe;
+  text-decoration: none;
+  color: white;
 }
 
 .nav-item:hover {
-    color: rgb(71, 71, 71);
-    cursor: pointer;
+  color: rgb(71, 71, 71);
+  cursor: pointer;
 }
-
 
 .hero-title {
-    color: white;
-    font-size: 5rem;
-    padding-top: 250px;
-    text-align: center;
-    margin: 0;
-    letter-spacing: 3px;
+  color: white;
+  font-size: 5rem;
+  padding-top: 250px;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 3px;
 }
 
-#hero > h3 {
-    color: white;
-    font-size: 3.5rem;
-    text-align: center;
-    letter-spacing: 3px;
-    margin-top: 0;
-    animation: slide_up 2s ease;
+#hero>h3 {
+  color: white;
+  font-size: 3.5rem;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-top: 0;
+  animation: slide_up 2s ease;
 }
 
 .btn {
-    margin-top: 0.5em;
-    padding: 1em 2.5em;
-    font-size: 1em;
-    border-radius: 4em;
-    border: none;
-    margin: 0 auto;
-    display: block;
-    background:  #BCBEC0;
-    color: whitesmoke;
-    font-family: 'Quicksand';
-    animation: slide_up 2s ease-out;
+  margin-top: 0.5em;
+  padding: 1em 2.5em;
+  font-size: 1em;
+  border-radius: 4em;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  background: #BCBEC0;
+  color: whitesmoke;
+  font-family: 'Quicksand';
+  animation: slide_up 2s ease-out;
 }
 
 .btn:hover {
-    background: rgb(71, 71, 71, 0.8);
-    cursor: pointer;
+  background: rgb(71, 71, 71, 0.8);
+  cursor: pointer;
 }
 
-
-@keyframes slide_up{
-    0%{
-        transform: translateY(350px);
-    }
-    100%{
-        transform: translateY(0);
-    }
+@keyframes slide_up {
+  0% {
+    transform: translateY(350px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-
-/* #aboutme {
-    position: absolute;
-    width: 1200px;
-    height: 500px;
-    top: 790px;
-    background: whitesmoke;
-}
-#aboutme > .title {
-    position: absolute;
-    padding-top: 100px;
-    padding-left: 100px;
-    font-size: 30px;
-    font-weight: bold;
-    letter-spacing: 0.03em;
-}
-
-.container2 {
-    width: 1241px;
-    height: 350px;
-    left: 100px;
-    top: 1400px;
-    background: #FFFFFF;
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
-} */
 
 /* ------------ SKILLS SECTION ---------- */
+
 #skills {
-    display: flex;
-    align-items: center;
-    height: 430px;
-    background-color: var(--gray);
+  display: flex;
+  align-items: center;
+  height: 430px;
+  background-color: var(--gray);
 }
 
 #skills-container {
@@ -137,7 +133,7 @@ url(./img/header_image1.jpg);
 }
 
 .skills-item {
-  border-right: 5px dotted var(--purple);
+  border-right: 5px dotted var(--blue);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -162,27 +158,83 @@ url(./img/header_image1.jpg);
   font-size: 1rem;
 }
 
+/* ------------ PORTFOLIO ---------- */
+
+#portfolio {
+  max-width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+}
+
+.portfolio-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+  align-items: center;
+  padding-bottom: 200px;
+}
+
+header {
+  margin: 0 30px;
+  padding-bottom: 80px;
+  font-size: 2.5rem;
+  color: var(--blue);
+  font-family: 'Pacifico';
+  text-align: center;
+}
+
+.top-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bottom-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
 /* ------------ REVIEWS ---------- */
+
 #reviews {
-  background-color: white;
+  background-color: var(--gray);
+}
+
+header .reviews {
+  font-family: 'Pacifico';
+  color: var(--blue);
+  margin-left: 50px;
 }
 
 #reviews-container {
-  width: 1080px;
+  max-width: 1080px;
   margin: 0 auto;
-  background-color: white;
+  background-color: var(--gray);
   display: flex;
   flex-wrap: wrap;
+  padding-top: 100px;
+  justify-content: center;
 }
 
 .review-item {
+  min-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 50%;
   box-sizing: border-box;
-  padding: 60px 20px;
+  padding: 30px 20px 60px 20px;
 }
 
 .review-img {
@@ -205,37 +257,104 @@ url(./img/header_image1.jpg);
   font-size: 1.25rem;
 }
 
-/* ------------ PORTFOLIO ---------- */
-#portfolio {
-    background-color: var(--gray);
-    height: 500px;
+/* ------------ CONTACT ME ---------- */
+
+#contact-section {
+  background-color: blue;
+  height: 600px;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(to top left, rgba(24, 143, 223, 0.6), rgba(223, 24, 190, 0.6)), url(./img/me.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
-.portfolio-container {
-    width: 1200px;
-    height: 90%;
-    margin: 0 auto;
-    padding-top: 50px;
-    align-items: center;
+.contact-title {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 80px;
 }
 
-.top-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+.contact {
+  background-color: white;
+  height: 350px;
+  margin: 300px auto;
+  display: flex;
+  max-width: 800px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.bottom-row {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+.contact-form {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--gray);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
-.portfolio-img {
-    width: 100%;
-    height: 200px;
-    background-color: #fff;
-    overflow: hidden;
+.contact-info {
+  flex-basis: 40%;
+  background-image: linear-gradient(to top left, rgba(24, 143, 223, 0.9), rgba(223, 24, 190, 0.9));
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
+.contact-info-title {
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+
+.contact-info-item {
+  margin: 20px;
+  font-size: 1.15rem;
+}
+
+.contact-form>textarea {
+  max-width: 300px;
+  max-height: 70px;
+  min-width: 300px;
+  min-height: 40px;
+}
+
+.contact-form>textarea, .contact-form>input {
+  width: 300px;
+  height: 40px;
+  outline: none;
+  border-radius: 50%;
+  border-radius: 20px;
+  background-color: white;
+  margin: 10px;
+  padding-left: 15px;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+  border: 2px solid transparent;
+  font-family: 'Quicksand';
+}
+
+.contact-form>textarea:hover, .contact-form>input:hover {
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form>textarea:focus, .contact-form>input:focus {
+  border: 2px solid var(--purple);
+}
+
+.contact-form-button {
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  background: linear-gradient(to left, rgba(24, 143, 223, 0.9), rgba(223, 24, 190, 0.9));
+  font-family: 'Quicksand';
+}
+
+button:focus {
+  outline: none;
+}
