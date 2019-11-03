@@ -1,0 +1,241 @@
+:root {
+    --gray: #FAFAFF;
+    --purple: #df18be;
+  }
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* ------------ HEADER ---------- */
+#hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to top left, rgba(24, 143, 223, 0.6), rgba(223, 24, 190, 0.6)), 
+url(./img/header_image1.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    position: absolute;
+    margin: 20px;
+    color: white;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo {
+    font-size: 1.2rem;
+    margin: 0 40px;
+    font-weight: bold;
+}
+
+.nav-item {
+    margin-right: 40px;
+    font-size: 1.2rem;
+}
+
+.nav-item:hover {
+    color: rgb(71, 71, 71);
+    cursor: pointer;
+}
+
+
+.hero-title {
+    color: white;
+    font-size: 5rem;
+    padding-top: 250px;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+#hero > h3 {
+    color: white;
+    font-size: 3.5rem;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: 0;
+    animation: slide_up 2s ease;
+}
+
+.btn {
+    margin-top: 0.5em;
+    padding: 1em 2.5em;
+    font-size: 1em;
+    border-radius: 4em;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    background:  #BCBEC0;
+    color: whitesmoke;
+    font-family: 'Quicksand';
+    animation: slide_up 2s ease-out;
+}
+
+.btn:hover {
+    background: rgb(71, 71, 71, 0.8);
+    cursor: pointer;
+}
+
+
+@keyframes slide_up{
+    0%{
+        transform: translateY(350px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* #aboutme {
+    position: absolute;
+    width: 1200px;
+    height: 500px;
+    top: 790px;
+    background: whitesmoke;
+}
+#aboutme > .title {
+    position: absolute;
+    padding-top: 100px;
+    padding-left: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+}
+
+.container2 {
+    width: 1241px;
+    height: 350px;
+    left: 100px;
+    top: 1400px;
+    background: #FFFFFF;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+} */
+
+/* ------------ SKILLS SECTION ---------- */
+#skills {
+    display: flex;
+    align-items: center;
+    height: 430px;
+    background-color: var(--gray);
+}
+
+#skills-container {
+  width: 1080px;
+  height: 70%;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-around;
+  align-items: center
+}
+
+.skills-item {
+  border-right: 5px dotted var(--purple);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 60%;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-item:last-child {
+  border: none;
+}
+
+.skills-item-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--purple);
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.skills-item-subtitle {
+  font-size: 1rem;
+}
+
+/* ------------ REVIEWS ---------- */
+#reviews {
+  background-color: white;
+}
+
+#reviews-container {
+  width: 1080px;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.review-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 60px 20px;
+}
+
+.review-img {
+  height: 120px;
+  width: auto;
+  border-radius: 50%;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.review-description {
+  font-style: italic;
+  line-height: 24px;
+  padding: 5px 40px;
+  text-align: center;
+}
+
+.review-author {
+  font-weight: bold;
+  color: var(--purple);
+  font-size: 1.25rem;
+}
+
+/* ------------ PORTFOLIO ---------- */
+#portfolio {
+    background-color: var(--gray);
+    height: 500px;
+}
+
+.portfolio-container {
+    width: 1200px;
+    height: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+    align-items: center;
+}
+
+.top-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bottom-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.portfolio-img {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
