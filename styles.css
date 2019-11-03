@@ -56,12 +56,11 @@ body {
 
 .nav-item a {
   outline: none;
-  text-decoration: nonoe;
   text-decoration: none;
-  color: white;
+  color: rgb
 }
 
-.nav-item:hover {
+.nav-item a:hover {
   color: rgb(71, 71, 71);
   cursor: pointer;
 }
