@@ -264,7 +264,7 @@ header .reviews {
   height: 600px;
   text-align: center;
   color: white;
-  background-image: linear-gradient(to top left, rgba(24, 143, 223, 0.6), rgba(223, 24, 190, 0.6)), url(./img/me.jpg);
+  background-image: linear-gradient(to top left, rgba(24, 143, 223, 0.6), rgba(223, 24, 190, 0.6)), url(./img/me.JPG);
   background-size: cover;
   background-position: center center;
 }
